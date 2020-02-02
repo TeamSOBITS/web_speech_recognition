@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>web_speech_recognition</name>
+  <version>0.0.1</version>
+  <description>The web_speech_recognition package</description>
+  <maintainer email="iiysaito@opensource-robotics.tokyo.jp">Isaac IY Saito</maintainer>
+  <author email="furushchev@jsk.imi.i.u-tokyo.ac.jp">Yuki Furuta</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosbridge_server</build_depend>
+  <build_depend>roswww</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>rosbridge_server</run_depend>
+  <run_depend>roswww</run_depend>
+
+</package>

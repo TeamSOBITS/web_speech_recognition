@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/web_speech_recognition/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/web_speech_recognition/web_speech_recognition.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Speech_Recognition</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1><span class="glyphicon glyphicon-star"></span>Web_Speech_Recognition <small>speech recognition</small></h1>
+      </div>
+      <div class="btn-group btn-lg">
+        <button type="button" class="btn btn-default" id="continuous"></button>
+        <button type="button" class="btn btn-primary" id="once"></button>
+        <button type="button" class="btn btn-default" id="speak"></button>
+
+        <audio id="sound-file" preload="auto">
+            <source src="sound/sound.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="error-sound" preload="auto">
+            <source src="sound/error.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="sucsess-sound" preload="auto">
+            <source src="sound/sucsess.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span id="language"></span>
+            <span class="caret"></span>
+          </button>
+          <ol class="dropdown-menu" id="lang-selector">
+            <li data-value="en-US"><a href="#">English</a></li>
+            <li data-value="ja-JP"><a href="#">Japanese</a></li>
+            <li data-value="ru-RU"><a href="#">Russian</a></li>
+          </ol>
+        </div>
+      </div>
+      <button id="clear-result" class="btn btn-warning"></button>
+      <form id="topic-form" role="form" class="form-inline">
+        <div class="form-group">
+          <input type="text" class="input-sm" id="topic-name" value="/recognition_word_array">
+          <input type="number" class="input-sm" id="alternative" value="5">
+          <button type="button" class="btn btn-success" id="topic-alt-button"></button>
+        </div>
+      </form>
+      <label class="checkbox inline">
+        <input type="checkbox" id="detail"><span id="detail-label"></span>
+      </label>
+      <label class="checkbox inline">
+        <input type="checkbox" id="publish-detail"><span id="publish-detail-label"></span>
+      </label>
+      <p><span class="bold-label" id="lang-label"></span>: <span id="lang"></span></p>
+      <p><span class="bold-label" id="status-label"></span>: <span id="status"></span></p>
+      <p><span class="bold-label" id="progress-label"></span>: <span id="progress"></span></p>
+      <p><span class="bold-label" id="result-label"></span>: <div id="messages"></div></p>
+    </div>
+    <script type="text/javascript" src="/web_speech_recognition/jquery.min.js"></script>
+    <script type="text/javascript" src="/web_speech_recognition/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="/web_speech_recognition/sobitsroslib.js"></script>
+    <script type="text/javascript" src="/web_speech_recognition/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/web_speech_recognition/i18n.js"></script>
+    <script type="text/javascript" src="/web_speech_recognition/web_speech_recognition.js"></script>
+  </body>
+</html>
