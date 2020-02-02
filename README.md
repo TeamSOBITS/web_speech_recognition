@@ -12,11 +12,11 @@ sudo apt-get install ros-kinetic-roswww
 ```
 ### How to use
 ```
-roslaunch web_speech_recognition google_speech_recognition_en.launch
+roslaunch web_speech_recognition web_speech_recognition_en.launch
 ```
 or
 ```
-roslaunch web_speech_recognition google_speech_recognition_jp.launch
+roslaunch web_speech_recognition web_speech_recognition_jp.launch
 ```
 
 ### Browse and enjoy it!
