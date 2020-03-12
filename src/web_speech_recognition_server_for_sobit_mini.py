@@ -10,21 +10,20 @@ sobit_mini用音声認識サービスノード
 serverが呼ばれたタイミングでsobit_miniの目と耳の制御を行う
 """
 
-head_status_publisher_g = rospy.Publisher("/sobit_mini_head/status", String, queue_size=10)
-
 def server(srv):
-    head_status_publisher_g.publish("recording")
+    head_status_publisher = rospy.Publisher("/sobit_mini_head/status", String, queue_size=10)
+    head_status_publisher.publish("recording")
 
     try:
         speech_recognition_server = rospy.ServiceProxy("/speech_recognition", SpeechRecognition)
         recognition_result = speech_recognition_server(srv.timeout_sec)
 
-        head_status_publisher_g.publish("normal")
+        head_status_publisher.publish("normal")
         return recognition_result
 
     except rospy.ServiceException, e:
         rospy.logerr(e)
-        head_status_publisher_g.publish("normal")
+        head_status_publisher.publish("normal")
 
 
 def main():
