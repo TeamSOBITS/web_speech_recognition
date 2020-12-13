@@ -9,6 +9,7 @@ pythonのClient側で# coding:utf-8を書いていると自動的に変換され
 
 ```
 sudo apt-get install ros-kinetic-roswww 
+sudo pip install future
 ```
 ### How to use
 ```
