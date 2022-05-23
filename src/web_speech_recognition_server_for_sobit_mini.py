@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding:utf-8
 import rospy
 from std_msgs.msg import String
@@ -21,7 +21,7 @@ def server(srv):
         head_status_publisher.publish("normal")
         return recognition_result
 
-    except rospy.ServiceException, e:
+    except rospy.ServiceException as e:
         rospy.logerr(e)
         head_status_publisher.publish("normal")
 
