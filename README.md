@@ -8,8 +8,8 @@ pythonのClient側で# coding:utf-8を書いていると自動的に変換され
 ### Open shell and type these commands.
 
 ```
-sudo apt-get install ros-kinetic-roswww 
-sudo pip install future
+sudo apt-get install ros-${ROS_DISTRO}-roswww 
+python3 -m pip install future
 ```
 ### How to use
 ```
