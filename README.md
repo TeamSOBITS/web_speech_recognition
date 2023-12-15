@@ -175,9 +175,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- 参考文献 -->
 ## 参考文献
 
-* []()
-* []()
-* []()
+* [ROS Noetic](http://wiki.ros.org/noetic)
 
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
