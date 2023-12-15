@@ -71,7 +71,6 @@ $(function () {
   });
   speech_recog.continuous = true;
   speech_recog.interimResults = true;
-  // speech_recog.maxAlternatives = 5;
 
   speech_recog.onsoundstart = function () {
     console.log('recog start.');
@@ -135,19 +134,12 @@ $(function () {
       var conf = recentResults[i].confidence;
       if (recentResults.isFinal) {
         recognition_result[i] = new result(word, conf);
-        // finalTranscript.push(word);
       } else {
         recognition_interim_result[i] = new result(word, conf);
-        // interimTranscript.push(word);
       }
 
     }
-    //console.log(finalTranscript);
-		/*
-        console.log(recognition_result);
-        console.log("sort");
-		console.log(recognition_result);
-        }*/
+
     if (recognition_result.length > 0) {
       recognition_result.sort(function (base, target) {
         if (base.confidence < target.confidence) return 1;
@@ -326,24 +318,6 @@ $(function () {
     console.log('clear result');
     $('#messages').html('');
   });
-
-  /*$('#topic-alt-button').click(function(e) {
-      if (topic != $('#topic-name').val()) {
-          topic = $('#topic-name').val();
-          console.log('topic changed to ' + topic);
-          tabletVoice = new ROSLIB.Topic({
-              ros: ros,
-              name: topic,
-              messageType: 'google_speech_recognition/SpeechRecognitionCandidates.msg'
-          });
-      }
-      var alt = parseInt($('#alternative').val());
-      if (alt) {
-          console.log('alternative: ' + alt);
-          speech_recog.maxAlternatives = alt;
-      }
-      speech_recog.stop();
-  });*/
 
   showMenuString();
 
