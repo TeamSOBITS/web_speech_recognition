@@ -6,7 +6,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![License][license-shield]][license-url]
 
 # web_speech_recognition
 
@@ -132,9 +132,9 @@
 <!-- マイルストーン -->
 ## マイルストーン
 
-- [ ] OSS
-    - [ ] ドキュメンテーションの英語化
-    - [ ] ライセンスの追加
+- [x] OSS
+    - [x] ドキュメンテーションの充実
+    - [x] ライセンスの追加
 
 
 現時点のバッグや新規機能の依頼を確認するために[Issueページ](https://github.com/github_username/repo_name/issues) をご覧ください．
@@ -144,7 +144,6 @@
 
 
 <!-- 変更履歴 -->
-## 変更履歴
 
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
