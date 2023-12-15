@@ -137,7 +137,7 @@
     - [x] ライセンスの追加
 
 
-現時点のバッグや新規機能の依頼を確認するために[Issueページ](https://github.com/github_username/repo_name/issues) をご覧ください．
+現時点のバッグや新規機能の依頼を確認するために[Issueページ](issues-url) をご覧ください．
 
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
