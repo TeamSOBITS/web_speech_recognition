@@ -123,7 +123,7 @@
 ## ノードに関して
 
 ### Services:
- * /web_speech_recognition/speech_recognition
+ * /speech_recognition
 
  <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
