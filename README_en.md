@@ -122,7 +122,7 @@ Open your browser and access the following link.
 ## Regarding Nodes
 
 ### Services:
- * /web_speech_recognition/speech_recognition
+ * /speech_recognition
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
