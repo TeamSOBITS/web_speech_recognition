@@ -32,24 +32,19 @@
   </ol>
 </details>
 
-
-
-<!-- レポジトリの概要 -->
+<!-- リポジトリの概要 -->
 ## 概要
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 ブラウザ上で動作する，APIによる音声認識機能です．
 
-
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
-
-
 
 <!-- セットアップ -->
 ## セットアップ
 
-ここで，本レポジトリのセットアップ方法について説明します．
+ここで，本リポジトリのセットアップ方法について説明します．
 
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
@@ -76,11 +71,11 @@
    # もしくは，"cd ~/catkin_ws/"へ移動．
    $ cd src/
    ```
-2. 本レポジトリをcloneします．
+2. 本リポジトリをcloneします．
    ```sh
    $ git clone https://github.com/TeamSOBITS/web_speech_recognition
    ```
-3. レポジトリの中へ移動します．
+3. リポジトリの中へ移動します．
    ```sh
    $ cd web_speech_recognition/
    ```
