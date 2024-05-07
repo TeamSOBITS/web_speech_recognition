@@ -10,9 +10,9 @@
 
 # web_speech_recognition
 
-<!-- TABLE OF CONTENTS次 -->
+<!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table Of Contents</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#introduction">Introduction</a>
