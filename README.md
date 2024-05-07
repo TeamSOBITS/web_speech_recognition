@@ -24,7 +24,7 @@
         <li><a href="#インストール方法">インストール方法</a></li>
       </ul>
     </li>
-    <li><a href="#実行・操作方法">実行・操作方法</a></li>
+    <li><a href="#実行操作方法">実行・操作方法</a></li>
     <li><a href="#マイルストーン">マイルストーン</a></li>
     <!-- <li><a href="#contributing">Contributing</a></li> -->
     <!-- <li><a href="#license">License</a></li> -->
@@ -42,7 +42,7 @@
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
 <!-- セットアップ -->
-## セットアップ
+## 環境構築
 
 ここで，本リポジトリのセットアップ方法について説明します．
 
