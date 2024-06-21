@@ -10,47 +10,51 @@
 
 # web_speech_recognition
 
-<!-- 目次 -->
+<!-- TABLE OF CONTENTS -->
 <details>
-  <summary>目次</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#概要">概要</a>
+      <a href="#introduction">Introduction</a>
     </li>
     <li>
-      <a href="#環境構築">セットアップ</a>
+      <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#環境条件">環境条件</a></li>
-        <li><a href="#インストール方法">インストール方法</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#実行操作方法">実行・操作方法</a></li>
-    <li><a href="#マイルストーン">マイルストーン</a></li>
+    <a href="#launch-and-usage">Launch and Usage</a>
+    <li><a href="#milestone">Milestone</a></li>
     <!-- <li><a href="#contributing">Contributing</a></li> -->
     <!-- <li><a href="#license">License</a></li> -->
-    <li><a href="#参考文献">参考文献</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-<!-- リポジトリの概要 -->
-## 概要
+
+
+<!-- INTRODUCTION -->
+## Introduction
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-ブラウザ上で動作する，APIによる音声認識機能です．
+This is an API-based voice recognition function that runs in the browser.
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
-<!-- セットアップ -->
-## セットアップ
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-ここで，本リポジトリのセットアップ方法について説明します．
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<!-- GETTING STARTED -->
+## Getting Started
 
-### 環境条件
+This section describes how to set up this repository.
 
-まず，以下の環境を整えてから，次のインストール段階に進んでください．
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Prerequisites
+
+First, please set up the following environment before proceeding to the next installation stage.
 
 | System  | Version |
 | ------------- | ------------- |
@@ -59,87 +63,84 @@
 | Python | 3.8 |
 
 > [!NOTE]
-> `Ubuntu`や`ROS`のインストール方法に関しては，[SOBITS Manual](https://github.com/TeamSOBITS/sobits_manual#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)を参照してください．
+> If you need to install `Ubuntu` or `ROS`, please check our [SOBITS Manual](https://github.com/TeamSOBITS/sobits_manual#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6).
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### インストール方法
+### Installation
 
-1. ROSの`src`フォルダに移動します．
+1. Go to the `src` folder of ROS.
    ```sh
    $ roscd
-   # もしくは，"cd ~/catkin_ws/"へ移動．
+   # Or just use "cd ~/catkin_ws/" and change directory.
    $ cd src/
    ```
-2. 本リポジトリをcloneします．
+2. Clone this repository.
    ```sh
    $ git clone https://github.com/TeamSOBITS/web_speech_recognition
    ```
-3. リポジトリの中へ移動します．
+3. Navigate into the repository.
    ```sh
    $ cd web_speech_recognition/
    ```
-4. 依存パッケージをインストールします．
+4. Install the dependent packages.
    ```sh
    $ bash install.sh
    ```
-5. パッケージをコンパイルします．
+5. Compile the package.
    ```sh
    $ roscd
-   # もしくは，"cd ~/catkin_ws/"へ移動．
+   # Or just use "cd ~/catkin_ws/" and change directory.
    $ catkin_make
    ```
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LAUNCH AND USAGE EXAMPLES -->
+## Launch and Usage
 
-<!-- 実行・操作方法 -->
-## 実行・操作方法
-
-### 1. launchファイルの起動
-* 日本語
+### 1. Launch the launch file
+* Japaneese
   ```sh
   roslaunch web_speech_recognition web_speech_recognition_jp.launch
   ```
 
-* 英語
+* English
   ```sh
   roslaunch web_speech_recognition web_speech_recognition_en.launch
   ```
 
-### 2. ブラウザの起動
-ブラウザを開き，以下のリンクにアクセスしてください
+### 2. Start your browser
+
+Open your browser and access the following link.
 
 `http://<your host name>:8000/web_speech_recognition/`
 
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ノードに関して
+## Regarding Nodes
 
 ### Services:
  * /speech_recognition
 
- <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- マイルストーン -->
-## マイルストーン
+<!-- MILESTONE -->
+## Milestone
 
 - [x] OSS
-    - [x] ドキュメンテーションの充実
-    - [x] ライセンスの追加
+    - [x] Improved documentation
+    - [x] Adding License
 
+See the [open issues][issues-url] for a full list of proposed features (and known issues).
 
-現時点のバッグや新規機能の依頼を確認するために[Issueページ][issues-url] をご覧ください．
-
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- 変更履歴 -->
-
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
 
@@ -154,7 +155,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -163,16 +164,16 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
-<!-- 参考文献 -->
-## 参考文献
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
 * [ROS Noetic](http://wiki.ros.org/noetic)
 
-<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
