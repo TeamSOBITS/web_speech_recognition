@@ -15,7 +15,7 @@ $(function () {
   const SpeechRecognitionServer = new ROSLIB.Service({
     ros: ros,
     name: '/speech_recognition',
-    serviceType: 'web_speech_recognition/SpeechRecognition'
+    serviceType: 'sobits_msgs/SpeechRecognition'
   });
 
   var showMenuString = function (lang) {
